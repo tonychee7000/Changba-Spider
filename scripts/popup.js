@@ -1,0 +1,16 @@
+$(document).ready(function()
+        {
+            chrome.tabs.getSelected(null,function(tab){
+                if(/^http:\/\/changba.com\//.test(tab.url))
+                {
+                    chrome.tabs.sendRequest(tab.id,{msg:"mp3add"},function(response)
+                    {
+                        $('#mp3add').val(response.address);
+                    });
+                }
+            });
+            $('#mp3add').mouseover(function(){
+                this.select();
+                $('#hint').text('按ctrl+c复制！');
+            });
+        });

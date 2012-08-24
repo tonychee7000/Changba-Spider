@@ -1,0 +1,27 @@
+{
+    "name":"Changba Spider",
+    "manifest_version":2,
+    "version":"1.0",
+    "description":"A very smple extension that fetch mp3 address at changba.com",
+    "icons":
+    {
+        "32":"icon.png",
+        "16":"icon.png"
+    },
+    "background":
+    {
+        "page":"background.html"
+    },
+    "page_action":
+    {
+        "default_icon":"icon.png",
+        "default_popup":"popup.html",
+        "default_title":"Changba Spider"
+    },
+    "content_scripts": [
+    {
+        "js":["lib/jquery.js","scripts/content.js"],
+        "matches":["http://changba.com/*"]
+    }],
+    "permissions":["http://changba.com/*","http://*.changba.com/*","tabs"]
+}

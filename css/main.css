@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+body
+{
+    width:540px;
+    height:25px;
+}
+span
+{
+    font-size:12pt;
+    font-family:"文泉驿微米黑","微软雅黑","宋体";
+}
+input#mp3add
+{
+    width:360px;
+}
+span#hint
+{
+    font-size:12px;
+    color:red;
+}
