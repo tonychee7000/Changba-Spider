@@ -11,7 +11,18 @@ span
 }
 input#mp3add
 {
+    padding:2px;
     width:360px;
+    border:1px solid gray;
+    border-radius:5px;
+    box-shadow:0 0 1px;
+    -webkit-transition-property:all;
+    -webkit-transition-duration:0.5s;
+    -webkit-transition-timing-function:ease;
+}
+input#mp3add:hover
+{
+    box-shadow:0 0 5px;
 }
 span#hint
 {
