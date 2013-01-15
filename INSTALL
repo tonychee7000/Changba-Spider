@@ -4,4 +4,4 @@
 由于Chrome的新安全策略，导致外来的插件无法安装，大家可以点击右上角扳手选择工具-扩展程序，把下载的crx文件托放到列表里
 
 Open chrome://extensions
-Drag the .crx file to this page
+Drag the .crx file to the page
